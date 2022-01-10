@@ -27,7 +27,7 @@ th, td {
 	<td width="130px"> <input type="file" id="pic" name="pic" accept=".png,.jpg,.jpeg">
 	</td>
 	<th>자기소개</th>
-	<td width="300px">안녕하세요 27살 한동훈입니다. 식품영양학과 졸업하고 왔습니다. 잘부탁드립니다.</td>
+	<td width="300px"><input type="text" id="int" name="int"></td>
 	
 		</tr>
 		</table>
@@ -44,12 +44,12 @@ th, td {
 			<th>아이디</th>
 			<th><input type="text" id="id" name="id"></th>
 			<th>비밀번호</th>
-			<th><input type="text" id="password" name="password"></th>
+			<th><input type="password" id="password" name="password"></th>
 		</tr>
 
 		<tr>
 			<th>성별</th>
-			<th><input type="text" id="gender" name="gender"></th>
+			<th><input type="radio" id="gm" name="gender">남<input type="radio" id="gl" name="gender">여</th>
 			<th>국적</th>
 			<th><input type="text" id="nation" name="nation"></th>
 		</tr>
@@ -64,11 +64,11 @@ th, td {
 		</tr>
 		<tr>
 			<th>핸드폰번호</th>
-			<th colspan="3"><input type="text" id="pf" name="pf">-<input type="text" id="pm" name="pm">-<input type="text" id="pb" name="pb"></th>
+			<th colspan="3"><input type="tel" id="pf" name="pf">-<input type="tel" id="pm" name="pm">-<input type="tel" id="pb" name="pb"></th>
 		</tr>
 		<tr>
 			<th>이메일</th>
-			<th colspan="3"><input type="text" id="email" name="email"></th>
+			<th colspan="3"><input type="email" id="email" name="email"></th>
 		</tr>
 		<tr>
 			<th>핸드폰 마케팅 수신 동의</th>
@@ -80,7 +80,7 @@ th, td {
 			<th>결혼 여부</th>
 			<th><input type="radio" id="my" name="marry">예<input type="radio" id="mn" name="marry">아니오</th>
 			<th>자녀 유무</th>
-			<th><input type="radio" id="cy" name="child">예<input type="radio" id="cn" name="child">아니오</th>
+			<th><input type="number" id="cy" name="child" min="0"></th>
 		</tr>
 				<tr>
 			<th>추천인</th>
@@ -97,9 +97,9 @@ th, td {
 
 		<tr>
 			<th>SNS</th>
-			<th><input type="text" id="sns" name="sns"></th>
+			<th><input type="url" id="sns" name="sns"></th>
 			<th>홈페이지</th>
-			<th><input type="text" id="hp" name="hp"></th>
+			<th><input type="url" id="hp" name="hp"></th>
 		</tr>
 
 		<tr>
@@ -130,7 +130,7 @@ th, td {
 		<tr>
 			<th><input type="text" id="prn" name="prn"></th>
 			<th><input type="text" id="prj" name="prj"></th>
-			<th><input type="month" id="mon" name="mon"></th>
+			<td><input type="month" id="mon" name="mon">부터<input type="month" id="mmon" name="mon">까지</td>
 			<th><input type="text" id="par" name="par"></th>
 			<th><input type="text" id="com" name="com"></th>
 		</tr>
