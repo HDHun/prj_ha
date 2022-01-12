@@ -7,26 +7,38 @@
 <meta name="viewport" content="width=dievice-width, intitial-scale=1.0">
 <title>Donghun</title>
 <style type="text/css">
-table, th, td {
+table {
 	border: 1px solid black;
 	border-collapse: collapse;
+	
 }
 
 th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
 	padding: 15px;
 	text-align: center;
+
 }
+
+th {
+
+	background-color:sandybrown;
+}
+
+
+
 </style>
 </head>
-<body>
+<body style="background-image: url(../paper.jpg);">
 	<form action="./memberList.html" id="view" name="view" method="post"
 		enctype="multipart/form-data">
 
 
 
 
-		<table border="1">
-			<b>자기소개</b>
+		<table border="1" style="margin-left: 600px;">
+			<p style="text-align: center; font-weight: bold;">자기소개</p>
 			<tr>
 				<th height="150px">사진</th>
 				<td width="130px"><img src="../dog3.png" width="130px"
@@ -37,8 +49,8 @@ th, td {
 
 			</tr>
 		</table>
-		<table border="1">
-			<b>개인정보</b>
+		<table border="1" style="margin-left: 550px">
+			<p style="text-align: center; font-weight: bold;">개인정보</p>
 			<tr>
 				<th>이름</th>
 				<td>한동훈</td>
@@ -122,9 +134,9 @@ th, td {
 		</table>
 
 
-		<table border="1">
+		<table border="1" style="margin-left: 520px;">
 
-			<b>프로젝트 여부</b>
+			<p style="text-align: center; font-weight: bold;">프로젝트 여부</p>
 
 			<tr>
 				<th>프로젝트 참여번호</th>
@@ -151,7 +163,7 @@ th, td {
 		</table>
 
 	</form>
-	<a href="./memberList.html">목록</a>
+	<a href="./memberList.html" style="margin-left: 900px; ">목록</a>
 	<a href="./memberEdit.html">수정</a>
 	<a href="./memberList.html">삭제</a>
 
