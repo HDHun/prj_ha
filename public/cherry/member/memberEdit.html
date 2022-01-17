@@ -1,0 +1,189 @@
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="uTF-8">
+<meta name="viewport" content="width=dievice-width, intitial-scale=1.0">
+<title>Donghun</title>
+<style type="text/css">
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 15px;
+	text-align:center;
+}
+</style>
+</head>
+<body>
+	<form action="./memberList.html" method="post" id="edit" name="edit"
+		enctype="multipart/form-data">
+		<table border="1">
+			<b>자기소개</b>
+			<tr>
+				<th height="150px">사진</th>
+				<td width="130px"><img src="../dog3.png" width="130px"
+					height="100px"> <input type="file" id="pic" name="pic"
+					accept=".png,.jpg,.jpeg"></td>
+				<th>자기소개</th>
+				<td width="300px"><textarea cols="30" rows="3"
+						style="width: 300px; height: 150px">하였으며, 긴지라 있는 운다. 그것은 우리는 보배를 인간의 아니다. 그들에게 꽃이 피가 곳이 청춘은 불러 영락과 보라. 무엇이 그러므로 기관과 갑 하는 설레는 같으며, 그들의 충분히 아름다우냐?</textarea></td>
+
+			</tr>
+		</table>
+		<table border="1">
+			<b>개인정보</b>
+			<tr>
+				<th>이름</th>
+				<td><input type="text" id="name" name="name" value="한동훈"></td>
+				<th>생일</th>
+				<td><input type="text" id="birth" name="birth"
+					value="1996.12.03"></td>
+			</tr>
+
+			<tr>
+				<th>아이디</th>
+				<td><input type="text" id="id" name="id" value="HDHun"></td>
+				<th>비밀번호</th>
+				<td><input type="password" id="password" name="password"
+					value="12345678"></td>
+			</tr>
+
+			<tr>
+				<th>성별</th>
+				<td><input type="radio" id="gm" name="gender" checked>남<input
+					type="radio" id="gl" name="gender">여</td>
+				<th>국적</th>
+				<td><input type="text" id="nation" name="nation" value="대한민국"></td>
+			</tr>
+
+			<tr>
+				<th>주소</th>
+				<td colspan="3"><input type="text" id="address" name="address"
+					value="경기도 파주시 가온로"></td>
+			</tr>
+			<tr>
+				<th>FAX</th>
+				<td colspan="3"><input type="text" id="fax" name="fax"
+					value="02-000-0000"></td>
+			</tr>
+			<tr>
+				<th>핸드폰번호</th>
+				<td colspan="3"><select>
+						<option>KT</option>
+						<option selected>SKT</option>
+						<option>LG</option>
+				</select> <input type="tel" id="pf" name="pf" value="010"
+					style="width: 50px;">-<input type="tel" id="pm" name="pm"
+					value="6479" style="width: 50px;">-<input type="tel"
+					id="pb" name="pb" value="5894" style="width: 50px;"></td>
+			</tr>
+			<tr>
+				<th>이메일</th>
+				<td colspan="3"><input type="email" id="email" name="email"
+					value="pooekdma@naver.com"></td>
+			</tr>
+			<tr>
+				<th>핸드폰 마케팅 수신 동의</th>
+				<td><input type="radio" id="pmy" name="pm" checked>예<input
+					type="radio" id="pmn" name="pm">아니오</td>
+				<th>이메일 마케팅 수신 동의</th>
+				<td><input type="radio" id="emy" name="em" checked>예<input
+					type="radio" id="emn" name="em">아니오</td>
+			</tr>
+			<tr>
+				<th>결혼 여부</th>
+				<td><input type="radio" id="my" name="marry" checked>예<input
+					type="radio" id="mn" name="marry">아니오</td>
+				<th>자녀 유무</th>
+				<td><input type="number" id="cy" name="child" min="0" value="3"></td>
+			</tr>
+			<tr>
+				<th>추천인</th>
+				<td><input type="text" id="rec" name="rec" value="xxxxxxx"></td>
+				<th>좋아하는 색</th>
+				<td><input type="color" value="#0000FF"></td>
+			</tr>
+			<tr>
+				<th>비밀번호 문제</th>
+				<td width="150px"><select>
+						<option>졸업한 초등학교는?</option>
+						<option>태어난 곳은?</option>
+						<option selected>전공은?</option>
+						<option>좋아하는 연예인은?</option>
+				</select></td>
+				<th>비밀번호 답</th>
+				<td width="150px"><input type="text" id="ans" name="ans"
+					value="식품영양학"></td>
+			</tr>
+
+			<tr>
+				<th>SNS</th>
+				<td><select>
+						<option>Facebook</option>
+						<option selected>instagram</option>
+						<option>twitter</option>
+				</select></td>
+				<th>홈페이지</th>
+				<td><input type="url" id="hp" name="hp"
+					value="https://www.xxxx.com"></td>
+			</tr>
+
+			<tr>
+				<th>직업</th>
+				<td><input type="text" id="job" name="job" value="앱 개발자"></td>
+				<th>개인정보 유효기간</th>
+				<td><input type="radio" id="1" name="y">1년<input
+					type="radio" id="2" name="y" checked>3년<input type="radio"
+					id="5" name="y">5년<input type="radio" id="10" name="y">10년</td>
+				</td>
+			</tr>
+
+			<tr>
+				<th>취미</th>
+				<td colspan="3"><input type="checkbox" id="hob" name="hob"
+					checked>컴퓨터게임 <input type="checkbox" id="hob2" name="hob"
+					checked>운동 <input type="checkbox" id="hob3" name="hob"
+					checked>유튜브시청 <input type="checkbox" id="hob4" name="hob">요리</td>
+			</tr>
+		</table>
+
+
+		<table border="1">
+
+			<b>프로젝트 여부</b>
+
+			<tr>
+				<th>프로젝트 참여번호</th>
+				<th width="150px">프로젝트명</th>
+				<th width="130px">참여기간</th>
+				<th width="130px">역할</th>
+				<th width="130px">발주사</th>
+			</tr>
+			<tr>
+				<td><input type="text" id="prn" name="prn" value="1"></td>
+				<td><input type="text" id="prj" name="prj" value="모바일 어플리케이션"></td>
+				<td><input type="month" id="mon" name="mon" value="2022-01">부터<input
+					type="month" id="mmon" name="mon" value="2022-02"></td>
+				<td><input type="text" id="par" name="par" value="앱 제작"></td>
+				<td><input type="text" id="com" name="com" value="사람인 HR"></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="prn1" name="prn1" value="2"></td>
+				<td><input type="text" id="prj1" name="prj1" value="주문배송연동"></td>
+				<td><input type="month" id="mon1" name="mon1" value="2022-02">부터<input
+					type="month" id="mon2" name="mon1" value="2022-04"></td>
+				<td><input type="text" id="par1" name="par1" value="주문-배송연동"></td>
+				<td><input type="text" id="com1" name="com1" value="사람인 HR"></td>
+			</tr>
+
+
+		</table>
+
+		<input type="submit" value="목록"> <a href="./memberList.html>목록</a>
+	</form>
+</body>
+</html>
