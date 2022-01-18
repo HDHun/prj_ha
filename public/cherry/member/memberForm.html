@@ -113,7 +113,35 @@ th, td {
 
 			<tr>
 				<th>주소</th>
-				<th colspan="3"><input type="text" id="address" name="address"></th>
+				<th colspan="3">
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ 주소검색
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">주소검색</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="도로명 주소를 입력하세요" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <a href="https://www.naver.com" class="btn btn-outline-secondary" role="button" id="button-addon2">검색</a>
+</div>
+      </div>
+      <p> 도로명 주소를 입력하세요</p>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+        <button type="button" class="btn btn-primary">설정</button>
+      </div>
+    </div>
+  </div>
+</div>
+</th>
 			</tr>
 			<tr>
 				<th>FAX</th>
@@ -184,9 +212,9 @@ th, td {
 			<tr>
 				<th>추천인</th>
 				<th><input type="text" id="rec" name="rec"><p>
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+  <span class="badge rounded-pill bg-primary" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
     확인
-  </button>
+  </span>
 </p>
 <div>
   <div class="collapse collapse-horizontal" id="collapseWidthExample">
@@ -210,7 +238,9 @@ th, td {
 			</tr>
 
 			<tr>
-				<th>SNS</th>
+				<th>SNS  <img src="../icon_round_facebook_48.png" width="20px">
+				<img src="../icon_round_instgram_48.png" width="20px">
+				<img src="../icon_round_twitter_48.png" width="20px"></th>
 				<th><select>
 						<option>Facebook</option>
 						<option>instagram</option>
@@ -232,18 +262,13 @@ th, td {
 			<tr>
 				<th>취미</th>
 				<th colspan="3">
-					<div class="form-check form-switch" style="display:inline-block;">
-						<input class="form-check-input" type="checkbox" role="switch"
-							id="flexSwitchCheckDefault">운동
-						<div class="form-check form-switch">
-							<input class="form-check-input" type="checkbox" role="switch"
-								id="flexSwitchCheckDefault">유튜브시청
-							<div class="form-check form-switch">
-								<input class="form-check-input" type="checkbox" role="switch"
-									id="flexSwitchCheckDefault">컴퓨터게임
-								<div class="form-check form-switch">
-									<input class="form-check-input" type="checkbox" role="switch"
-										id="flexSwitchCheckDisabled" disabled>명상
+				<input type="checkbox" class="btn-check" id="btn-check-2-outlined" autocomplete="off">
+<label class="btn btn-outline-secondary" for="btn-check-2-outlined">운동</label>
+				<input type="checkbox" class="btn-check" id="btn-check-2-outlined2" autocomplete="off">
+<label class="btn btn-outline-secondary" for="btn-check-2-outlined2">유튜브 시청</label>
+				<input type="checkbox" class="btn-check" id="btn-check-2-outlined3" autocomplete="off">
+<label class="btn btn-outline-secondary" for="btn-check-2-outlined3">컴퓨터게임</label>
+				
 								</div>
 							</div>
 			</tr>
