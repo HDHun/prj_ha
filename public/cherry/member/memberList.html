@@ -29,7 +29,7 @@ th, td {
 
 
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" id="header">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">메뉴</a>
 			<button class="navbar-toggler" type="button"
@@ -82,7 +82,7 @@ th, td {
 			<h3>개인정보</h3>
 		</div>
 	
-	<div style="float: left; width: 20%; background-color: white;">
+	<div style="float: left; width: 20%; height: 800px; background-color: sandybrown;">
 		<ul class="nav flex-column">
 			<li class="nav-item">
 			<li class="nav-item"><a class="nav-link disabled">회원 목록</a></li>
@@ -109,7 +109,7 @@ th, td {
 		<tr>
 			<td>한동훈
 				<button type="button" class="btn btn-primary position-relative"
-					onclick="location.href='./memberView.html'">
+					onclick="location.href='./memberView.html'" style="height: 40px;">
 					정보 <span
 						class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
 						<span class="visually-hidden">New alerts</span>
@@ -131,8 +131,29 @@ th, td {
 		<tr>
 			<td>개미</td>
 			<td>23</td>
-			<td>경기도 수원시</td>
+			<td>수원</td>
 			<td>010-1111-1111</td>
+
+		</tr>
+		<tr>
+			<td>거미</td>
+			<td>23</td>
+			<td>충남</td>
+			<td>010-2222-2222</td>
+
+		</tr>
+		<tr>
+			<td>귀뚜라미</td>
+			<td>20</td>
+			<td>평택</td>
+			<td>010-3333-3333</td>
+
+		</tr>
+		<tr>
+			<td>방아꺠비</td>
+			<td>15</td>
+			<td>광명</td>
+			<td>010-4444-4444</td>
 
 		</tr>
 
@@ -140,7 +161,7 @@ th, td {
 
 
 	</table>
-	<div style="clear: both; margin-left: 42%;">
+	<div style="clear: both; margin-left: 45%;">
 		<nav aria-label="Page navigation example">
 			<ul class="pagination">
 				<li class="page-item"><a class="page-link" href="#"
@@ -168,6 +189,7 @@ th, td {
 		style="margin: auto; display: block; clear: both;">등록</button>
 
 
+<a class="btn btn-dark" href="#header" style="position: fixed; left: 95%; top: 95%;" role="button">Top</a>
 
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
