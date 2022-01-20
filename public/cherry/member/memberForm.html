@@ -44,7 +44,8 @@ th, td {
 						</div>
 					</div>
 				</div>
-				</tr>
+			</div>
+
 		</table>
 		<table class="table" border="1" width="100%">
 			<b>개인정보</b>
@@ -56,9 +57,9 @@ th, td {
 			</tr>
 
 			<tr>
-				<th class="table-warning" >아이디</th>
+				<th class="table-warning">아이디</th>
 				<th><input type="text" id="id" name="id"></th>
-				<th class="table-warning" >비밀번호</th>
+				<th class="table-warning">비밀번호</th>
 				<th>
 					<div class="col-auto">
 						<input type="password" id="inputPassword6" class="form-control"
@@ -188,10 +189,11 @@ th, td {
 			<tr>
 				<th class="table-warning">이메일</th>
 				<th colspan="3"><div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-  <span class="input-group-text">@</span>
-  <input type="text" class="form-control" placeholder="Server" aria-label="Server">
-</div></th>
+						<input type="text" class="form-control" placeholder="Username"
+							aria-label="Username"> <span class="input-group-text">@</span>
+						<input type="text" class="form-control" placeholder="Server"
+							aria-label="Server">
+					</div></th>
 			</tr>
 			<tr>
 				<th class="table-warning">핸드폰 마케팅 수신 동의</th>
@@ -209,14 +211,16 @@ th, td {
 				<th><div class="form-check form-switch">
 						<input class="form-check-input" type="checkbox" role="switch"
 							id="flexSwitchCheckDefault"> <label
-							class="form-check-label" for="flexSwitchCheckDefault"></label></th>
+							class="form-check-label" for="flexSwitchCheckDefault"></label>
+					</div></th>
 			</tr>
 			<tr>
 				<th class="table-warning">결혼 여부</th>
 				<th><div class="form-check form-switch">
 						<input class="form-check-input" type="checkbox" role="switch"
 							id="flexSwitchCheckDefault2"> <label
-							class="form-check-label" for="flexSwitchCheckDefault2"></th>
+							class="form-check-label" for="flexSwitchCheckDefault2"></label>
+					</div></th>
 				<th class="table-warning">자녀 유무</th>
 				<th><input type="number" id="cy" name="child" min="0"></th>
 			</tr>
@@ -252,8 +256,9 @@ th, td {
 			</tr>
 
 			<tr>
-				<th class="table-warning">SNS <img src="../icon_round_facebook_48.png" width="20px">
-					<img src="../icon_round_instgram_48.png" width="20px"> <img
+				<th class="table-warning">SNS <img
+					src="../icon_round_facebook_48.png" width="20px"> <img
+					src="../icon_round_instgram_48.png" width="20px"> <img
 					src="../icon_round_twitter_48.png" width="20px"></th>
 				<th><select>
 						<option>Facebook</option>
@@ -268,21 +273,17 @@ th, td {
 				<th class="table-warning">직업</th>
 				<th><input type="text" id="job" name="job"></th>
 				<th class="table-warning">개인정보 유효기간</th>
-				<th>
-				<input type="radio" class="btn-check" name="options"
-					id="option1" autocomplete="off" checked> <label
-					class="btn btn-secondary" for="option1">1년</label>
-				<input type="radio" class="btn-check" name="options"
-					id="option2" autocomplete="off" checked> <label
-					class="btn btn-secondary" for="option2">3년</label>
-				<input type="radio" class="btn-check" name="options"
-					id="option3" autocomplete="off" checked> <label
-					class="btn btn-secondary" for="option3">5년</label>
-				<input type="radio" class="btn-check" name="options"
-					id="option4" autocomplete="off" checked> <label
-					class="btn btn-secondary" for="option4">10년</label>
-
-					</th>
+				<th><input type="radio" class="btn-check" name="options"
+					id="option1" autocomplete="off"> <label
+					class="btn btn-secondary" for="option1">1년</label> <input
+					type="radio" class="btn-check" name="options" id="option2"
+					autocomplete="off"> <label class="btn btn-secondary"
+					for="option2">3년</label> <input type="radio" class="btn-check"
+					name="options" id="option3" autocomplete="off"> <label
+					class="btn btn-secondary" for="option3">5년</label> <input
+					type="radio" class="btn-check" name="options" id="option4"
+					autocomplete="off"> <label class="btn btn-secondary"
+					for="option4">10년</label></th>
 			</tr>
 
 			<tr>
@@ -296,9 +297,6 @@ th, td {
 						시청</label> <input type="checkbox" class="btn-check"
 					id="btn-check-2-outlined3" autocomplete="off"> <label
 					class="btn btn-outline-secondary" for="btn-check-2-outlined3">컴퓨터게임</label>
-
-					</div>
-					</div>
 			</tr>
 		</table>
 
@@ -334,7 +332,59 @@ th, td {
 
 
 
+		<table class="table" width="100%">
+			<tr>
+				<td width="30%" class="table-warning">이용약관 동의</td>
+				<td width="70%"><button class="btn btn-primary" type="button"
+						data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom3"
+						aria-controls="offcanvasBottom3">이용약관</button>
 
+					<div class="offcanvas offcanvas-bottom" tabindex="-1"
+						id="offcanvasBottom3" aria-labelledby="offcanvasBottomLabel3">
+						<div class="offcanvas-header">
+							<h5 class="offcanvas-title" id="offcanvasBottomLabel3">이용약관</h5>
+							<button type="button" class="btn-close text-reset"
+								data-bs-dismiss="offcanvas" aria-label="Close"></button>
+						</div>
+						<div class="offcanvas-body small">이용약관</div>
+					</div>
+					<div class="form-check form-switch">
+						<input class="form-check-input" type="checkbox" role="switch"
+							id="flexSwitchCheckDefault3"> <label
+							class="form-check-label" for="flexSwitchCheckDefault3"></label>
+					</div></td>
+
+			</tr>
+
+			<tr>
+				<td class="table-warning">개인정보 수집 동의</td>
+				<td><button class="btn btn-primary" type="button"
+						data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom4"
+						aria-controls="offcanvasBottom4">개인정보 수집내용</button>
+
+					<div class="offcanvas offcanvas-bottom" tabindex="-1"
+						id="offcanvasBottom4" aria-labelledby="offcanvasBottomLabel4">
+						<div class="offcanvas-header">
+							<h5 class="offcanvas-title" id="offcanvasBottomLabel4">개인정보
+								수집내용</h5>
+							<button type="button" class="btn-close text-reset"
+								data-bs-dismiss="offcanvas" aria-label="Close"></button>
+						</div>
+						<div class="offcanvas-body small">개인정보 수집내용</div>
+					</div>
+					<div class="form-check form-switch">
+						<input class="form-check-input" type="checkbox" role="switch"
+							id="flexSwitchCheckDefault3"> <label
+							class="form-check-label" for="flexSwitchCheckDefault3"></label>
+					</div></td>
+
+			</tr>
+
+
+
+
+
+		</table>
 
 
 
@@ -347,7 +397,7 @@ th, td {
 		<button type="button" onclick="location.href='./memberList.html'"
 			class="btn btn-dark" style="margin: auto; display: inline;">목록</button>
 
-		
+
 	</form>
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
