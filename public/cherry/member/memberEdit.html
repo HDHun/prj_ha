@@ -20,22 +20,27 @@ th, td {
 }
 </style>
 </head>
-<body>
+<body style="background-image: url(../../banana/paper.jpg)">
 	<form action="./memberList.html" method="post" id="edit" name="edit"
 		enctype="multipart/form-data">
-		<table  border="1" style="margin-left: 35%; width: 40%">
-			<p style="text-align: center; font-weight:bold; ">자기소개</p>
-			<tr>
-				<th height="150px">사진</th>
-				<td width="130px"><img src="../dog3.png" width="130px"
-					height="100px"> <input type="file" id="pic" name="pic"
-					accept=".png,.jpg,.jpeg"></td>
-				<th>자기소개</th>
-				<td width="300px"><textarea cols="30" rows="3"
-						style="width: 300px; height: 150px">하였으며, 긴지라 있는 운다. 그것은 우리는 보배를 인간의 아니다. 그들에게 꽃이 피가 곳이 청춘은 불러 영락과 보라. 무엇이 그러므로 기관과 갑 하는 설레는 같으며, 그들의 충분히 아름다우냐?</textarea></td>
-
-			</tr>
-		</table>
+		
+			<div class="card mb-3" style="max-width: 540px; margin-left: 35%;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="../dog3.png" style="height:190px" class="img-fluid rounded-start" alt="..."
+      ><input type="file" id="pic" name="pic" accept=".png,.jpg,.jpeg">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">자기소개</h5>
+        <p class="card-text">하였으며, 긴지라 있는 운다. 그것은 우리는 보배를 인간의 아니다. 그들에게 꽃이
+					피가 곳이 청춘은 불러 영락과 보라. 무엇이 그러므로 기관과 갑 하는 설레는 같으며, 그들의 충분히 아름다우냐?</p>
+      </div>
+    </div>
+  </div>
+</div>
+	
+		
 		<table width="100%" class="table">
 			<p style="text-align: center; font-weight:bold; ">개인정보</p>
 			<tr>
