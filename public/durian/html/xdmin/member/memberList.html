@@ -19,182 +19,45 @@ div {
 }
 </style>
 </head>
-<header style="background-color: gray;">
-	<ul class="nav">
-		<li class="nav-item"><a class="nav-link active"
-			aria-current="page" href="#" style="color: white;">Home</a></li>
-		<li class="nav-item"><a class="nav-link" href="#"
-			style="color: white;">Features</a></li>
-		<li class="nav-item"><a class="nav-link" href="#"
-			style="color: white;">시스템 관리</a></li>
-		<li class="nav-item"><a class="nav-link disabled"
-			style="color: white;">Dropdown</a></li>
-	</ul>
-</header>
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 col-md-6">
-				<label for="id" class="form-label">아이디</label> <input type="text"
-					class="form-control" id="id" maxlength="20" minlength="4"
-					placeholder="영문(대소!문자),숫자,특수문자O,4~20자리조합">
-			</div>
 
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 col-md-6">
-				<label for="password" class="form-label">비밀번호</label> <input
-					type="password" class="form-control" id="password" maxlength="20"
-					minlength="4" placeholder="영문(대소문자),숫자,특수문자O,4~20자리조합">
-			</div>
-			<div class="col-sm-12 col-md-6">
-				<label for="passwordcheck" class="form-label">비밀번호 확인</label> <input
-					type="password" class="form-control" id="passwordcheck" maxlength="20"
-					minlength="4">
-			</div>
 
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<label for="name" class="form-label">이름</label> <input type="text"
-					class="form-control" id="name">
-			</div>
-			<div class="col">
-				<label for="nameen" class="form-label">이름(영문)</label> <input
-					type="text" class="form-control" id="nameen">
-			</div>
+	<header style="float: left; width: 55%;">
 
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<label for="firname" class="form-label">성</label> <input type="text"
-					class="form-control" id="firname">
-			</div>
-			<div class="col">
-				<label for="firnameen" class="form-label">성(영문)</label> <input
-					type="text" class="form-control" id="firnameen">
-			</div>
+		<input type="image" src="../../../images/logo.png"
+			style="width: 80px; float: left;">
 
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<label for="gender" class="form-label">성별</label> <select
-					class="form-select" id="gender">
-					<option>선택</option>
-					<option>남성</option>
-					<option>여성</option>
-				</select>
-			</div>
-			<div class="col">
-				<label for="birth" class="form-label">생일</label> <input type="text"
-					class="form-control" id="birth">
-			</div>
-
-		</div>
+		<div style="font-weight: bolder; font-size: 30px; margin-top: 15px;">Market
+			Service</div>
+	</header>
+	<section style="float: right; width: 30%;">
+		<input type="image" src="../../../images/user.png"
+			style="width: 25px; margin: 20px; float: left;">
+		<div style="font-weight: bolder; font-size: 20px; margin-top: 20px;">User</div>
+		
+	</section>
+	
+	<div style="clear: both;">
+		<nav style="background-color: purple;">
+			<ul class="nav">
+				<li class="nav-item"><a class="nav-link active"
+					aria-current="page" href="#" style="color: white;">홈</a></li>
+				<li class="nav-item"><a class="nav-link" href="#"
+					style="color: white;">회원관리</a></li>
+				<li class="nav-item"><a class="nav-link" href="#"
+					style="color: white;">시스템 관리</a></li>
+				<li class="nav-item"><a class="nav-link"
+					style="color: white;">상품관리</a></li>
+			</ul>
+		</nav>
 	</div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<label for="email" class="form-label">이메일</label> <input type="text"
-					class="form-control" id="email" placeholder="name@example.com">
-			</div>
-			<div class="col">
-				이메일 마케팅 동의여부 <br>
-				<div class="form-check form-check-inline">
-					<input class="form-check-input" type="checkbox" id="email1"
-						value="option1"> <label class="form-check-label"
-						for="email1">동의</label>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<label for="phone" class="form-label">핸드폰</label> <input type="text"
-					class="form-control" id="phone" placeholder="숫자만(01044448888)">
-			</div>
-			<div class="col">
-				핸드폰 정보 마케팅 사용 동의 <br>
-				<div class="form-check form-check-inline">
-					<input class="form-check-input" type="checkbox" id="phone"
-						value="option1"> <label class="form-check-label"
-						for="phone">동의</label>
-				</div>
-			</div>
-		</div>
-	</div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<label for="call" class="form-label">전화번호</label> <input type="text"
-					class="form-control" id="call" placeholder="숫자만(024448888)">
-			</div>
-			<div class="col">
-				<label for="fax" class="form-label">FAX</label> <input type="text"
-					class="form-control" id="fax" placeholder="숫자만(024448888)">
-			</div>
 
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<label for="state" class="form-label">거주국가</label> <select
-					class="form-select" id="state">
-					<option>선택</option>
-					<option>한국</option>
-					<option>미국</option>
-					<option>일본</option>
-					<option>중국</option>
-					<option>영국</option>
-				</select>
-			</div>
-			<div class="col">
-				<label for="exampleDataList" class="form-label">Datalist
-					example</label> <input class="form-control" list="datalistOptions"
-					id="exampleDataList" placeholder="Type to search...">
-				<datalist id="datalistOptions">
-					<option value="San Francisco">
-					<option value="New York">
-					<option value="Seattle">
-					<option value="Los Angeles">
-					<option value="Chicago">
-				</datalist>
-			</div>
 
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<label for="address" class="form-label">주소</label>
-				<div class="input-group mb-3" id="address">
-					<input type="text" class="form-control">
-					<button class="btn btn-outline-secondary" type="button"
-						id="button-addon2">검색</button>
-				
-				</div>
-			</div>
-			<div class="col">
-				<label for="address1" class="form-label">상세주소</label>
-				<div class="input-group mb-3" id="address1">
-					<input type="text" class="form-control">
-					
-				</div>
-			</div>
-		</div>
-	</div>
+	<footer> </footer>
+
+
 
 
 
