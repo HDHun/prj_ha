@@ -55,24 +55,32 @@ div {
 				<li class="nav-item"><a class="nav-link" href="#" style="color: white;">상품관리</a></li>
 			</ul>
 		</nav>
-		<div class="collapse" id="navbarToggleExternalContent">
+
+
+
+
+<div class="collapse" id="navbarToggleExternalContent">
   <div class="bg-dark p-4">
     <h5 class="text-white h4">Collapsed content</h5>
     <span class="text-muted">Toggleable via the navbar brand.</span>
   </div>
 </div>
-<nav class="navbar">
+<nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div>
     </button>
   </div>
 </nav>
-	</div>
-
-
-
-
 
 	<div class="container-fluid">
 	
