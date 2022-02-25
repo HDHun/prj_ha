@@ -49,6 +49,9 @@ div {
 			style="width: 80px; float: left;" class="d-md-none">
 		<div class="d-md-none" style="font-weight: bolder; font-size: 30px; display:inline;">Market
 			Service</div>
+		<button class="btn d-md-none" style="float: right;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+ 			 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+			</svg></button>
 		
 			
 		<nav>
@@ -63,40 +66,35 @@ div {
 			</ul>
 		</nav>
 		
-		<button class="btn d-md-none" style="float: right;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
- 			 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-			</svg></button>
 			</div>
 			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   			<div class="offcanvas-header">
-  			  <h5 id="offcanvasRightLabel">메뉴</h5>
   			  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  				</div>
   				<div class="offcanvas-body">
-  				  <nav>
+  				  
   				  <ul>
 				<li><a class="nav-link"
-					aria-current="page" href="#">홈</a></li>
+					 href="#">홈</a></li>
 				<li><a class="nav-link" href="#"
 					>회원관리</a></li>
 				<li><a class="nav-link" href="#"
 					>시스템 관리</a></li>
 				<li><a class="nav-link" href="#">상품관리</a></li>
 				</ul>
-				</nav>
+				
  				 </div>
 				</div>
 			</div>
 
 
-
-
 	<div class="container-fluid">
+		<div class="table-responsive">
 				<table class="table">
-
 					<thead>
 						<tr>
-							<th scope="col" style="width: 200px;"><div
-									class="form-check">
+							<th scope="col" style="width: 200px;">
+							<div class="form-check">
 									<input class="form-check-input" type="checkbox" value=""
 										id="flexCheckDefault"> <label class="form-check-label"
 										for="flexCheckDefault" style="width: 100px;">전체선택</label></div></th>
@@ -178,7 +176,7 @@ div {
 						</tr>
 					</tbody>
 				</table>
-
+	</div>
 				<span class="badge bg-info">
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
 						fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
