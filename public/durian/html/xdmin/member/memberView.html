@@ -12,15 +12,13 @@
 
 
 
-<title>memberView</title>
+<title>memberForm</title>
 <style type="text/css">
-</style>
-</head>
-<body>
-<style type="text/css">
-div {
-	margin: 10px;
+div  {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
+
 </style>
 </head>
 <body>
@@ -85,26 +83,25 @@ div {
 				
  				 </div>
 				</div>
-			</div>
 
 		<div class="container-fluid">
 			<div class="row">
-				<div class="gy-3 col-md-6">
-					<label for="id" class="form-label">아이디</label> <input type="text"
-						class="form-control" id="id" maxlength="20" minlength="4"
-						value="Huun" disabled>
+				<div class="gy-3 col-12">
+					<label for="id" class="form-label">아이디</label>
+					<input type="text" class="form-control" id="id" 
+					maxlength="20" minlength="4" value="Huun" disabled>
 				</div>
 
 			</div>
 		</div>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md">
+				<div class="col-12 col-md-6">
 					<label for="password" class="form-label">비밀번호</label> <input
 						type="password" class="form-control" id="password" maxlength="20"
 						minlength="4" value="*************" disabled>
 				</div>
-				<div class="col-md">
+				<div class="col-12 col-md-6">
 					<label for="passwordcheck" class="form-label">비밀번호 확인</label> <input
 						type="password" class="form-control" id="passwordcheck"
 						maxlength="20" minlength="4" value="*************" disabled>
@@ -112,35 +109,30 @@ div {
 
 			</div>
 		</div>
-		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md">
+				<div class="col-12 col-md-6">
 					<label for="name" class="form-label">이름</label> <input type="text"
 						class="form-control" id="name" value="동훈" disabled>
 				</div>
-				<div class="col-md">
+				<div class="col-12 col-md-6">
 					<label for="nameen" class="form-label">이름(영문)</label> <input
 						type="text" class="form-control" id="nameen" value="DongHun" disabled>
 				</div>
 
 			</div>
-		</div>
-		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md">
+				<div class="col-12 col-md-6">
 					<label for="firname" class="form-label">성</label> <input
 						type="text" class="form-control" id="firname" value="한" disabled>
 				</div>
-				<div class="col-md">
+				<div class="col-12 col-md-6">
 					<label for="firnameen" class="form-label">성(영문)</label> <input
 						type="text" class="form-control" id="firnameen" value="Han" disabled>
 				</div>
 
 			</div>
-		</div>
-		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md">
+				<div class="col-12 col-md-6">
 					<label for="gender" class="form-label">성별</label> <select
 						class="form-select" id="gender" disabled>
 						<option>선택</option>
@@ -148,32 +140,28 @@ div {
 						<option>여성</option>
 					</select>
 				</div>
-				<div class="col-md">
+				<div class="col-12 col-md-6">
 					<label for="birth" class="form-label">생일</label> <input type="text"
 						class="form-control" id="birth" value="1996.12.03" disabled>
 				</div>
 
 			</div>
-		</div>
 
-		<div class="container-fluid">
 			<div class="row">
 				<div class="col">
 					<label for="email" class="form-label">이메일</label> <input
-						type="text" class="form-control" id="email"
-						value="Huun@naver.com" disabled>
+						type="text" class="form-control" id="email" disabled
+						value="Huun@naver.com">
 				</div>
 				<div class="col">
 					이메일 마케팅 동의여부 <br>
 					<div class="form-check form-check-inline">
 						<input class="form-check-input" type="checkbox" id="email1"
 							value="option1" checked> <label class="form-check-label"
-							for="email1">동의</label>
+							for="email1" >동의</label>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container-fluid">
 			<div class="row">
 				<div class="col">
 					<label for="phone" class="form-label">핸드폰</label> <input
@@ -189,9 +177,6 @@ div {
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-6">
 
@@ -210,10 +195,8 @@ div {
 				</div>
 
 			</div>
-		</div>
-		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md">
+				<div class="col-12 col-md-6">
 					<label for="state" class="form-label">거주국가</label> <select
 						class="form-select" id="state" disabled>
 						<option>선택</option>
@@ -224,16 +207,14 @@ div {
 						<option>영국</option>
 					</select>
 				</div>
-				<div class="col-md">
+				<div class="col-12 col-md-6">
 					<label for="recommender" class="form-label">추천인</label> <input
 						type="text" class="form-control" id="recommender" disabled>
 				</div>
 
 			</div>
-		</div>
-		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md">
+				<div class="col-12 col-md-6">
 					<label for="address" class="form-label">주소</label>
 					<div class="input-group mb-3" id="address" >
 						<input type="text" class="form-control"placeholder="경기도 파주시 가온로" disabled>
@@ -278,38 +259,35 @@ div {
 
 					</div>
 				</div>
-				<div class="col-md">
+				<div class="col-12 col-md-6">
 					<label for="address1" class="form-label">상세주소</label>
 					<div class="input-group mb-3" id="address1">
-						<input type="text" class="form-control" vlaue="1111-111" disabled>
+						<input type="text" class="form-control" value="1111-111" disabled>
 
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md">
+				<div class="col-12 col-md-6">
 					<label for="changer" class="form-label">최종수정자</label> <input
 						type="text" class="form-control" id="changer" value="한동훈" disabled>
 				</div>
-				<div class="col-md">
+				<div class="col-12 col-md-6">
 					<label for="changeday" class="form-label">최종수정일</label> <input
 						type="text" class="form-control" id="changeday" value="2022-01-01" disabled>
 				</div>
-				<div class="col-md">
+				<div class="col-12 col-md-6">
 					<label for="firstchanger" class="form-label">최초등록자</label> <input
-						type="text" class="form-control" id="firstchanger" value="2022-01-01" disabled>
+						type="text" class="form-control" id="firstchanger" value="2022-01-01"disabled>
 				</div>
-				<div class="col-md">
+				<div class="col-12 col-md-6">
 					<label for="firstchangeday" class="form-label">최초등록일</label> <input
-						type="text" class="form-control" id="fisrtchangeday" value="한동훈" disabled>
+						type="text" class="form-control" id="fisrtchangeday" value="한동훈"disabled>
 				</div>
 
 			</div>
-		</div>
 		
-		<a class="btn btn-primary" href="./memberEdit.html" role="button">수정</a>
+		
 </form>
 	
 
