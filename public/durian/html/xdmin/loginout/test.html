@@ -1,0 +1,52 @@
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="uTF-8">
+<meta name="viewport" content="width=dievice-width, intitial-scale=1.0">
+
+<link
+	href="../../../_bootstrap/_bootstrap/bootstrap-5.1.3-dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+
+
+<title>logIn</title>
+<style type="text/css">
+</style>
+</head>
+<body>
+
+
+
+<div class="btn-group">
+    <!-- 버튼태그 -->
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+    메뉴버튼
+    <!-- 버튼태그 우측 메뉴출력을 위한 화살표표시
+        (없어도 무관하나 메뉴버튼이라는것을 알려주기 위함) -->
+    <span class="caret"></span>
+    </button>
+    <!--메뉴버튼 클릭시 하단 표출된 리스트 영역  -->
+    <ul class="dropdown-menu" >
+        <!-- 메뉴1 -->
+        <li><a href="#">메뉴1</a></li>
+        <!-- 메뉴2 -->
+        <li><a href="#">메뉴2</a></li>
+    </ul>
+</div>
+
+
+출처: https://hellogk.tistory.com/31 [IT Code Storage]
+
+	<script
+		src="../../_bootstrap/_bootstrap/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js">
+var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+  return new bootstrap.Dropdown(dropdownToggleEl)
+})
+	</script>
+
+</body>
+</html>
