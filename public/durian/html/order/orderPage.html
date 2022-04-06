@@ -10,7 +10,7 @@
 
 
 
-<title>shoppingBasket</title>
+<title>Order</title>
 <style type="text/css">
 </style>
 </head>
@@ -92,12 +92,176 @@
 	    
 	    
 	    
-	    <!-- 이모티콘 버튼 -->
+	    
 	
 	<div style="text-align: center; margin-top:100px;">
 		<h4 style="font-weight:bold; ">주문서</h4>
 	</div>	
-			
+<div class="container">
+	<div class="col-10">
+		<div class="accordion accordion-flush" id="accordionFlushExample">
+		  <div class="accordion-item">
+		    <h2 class="accordion-header" id="flush-headingOne">
+		      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+		        <h5>주문상품</h5>
+		      </button>
+		    </h2>
+		    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+		      <div class="accordion-body">
+		      <image src="../../images/3.3.PNG" style="width: 100px;">
+		      	<p style="display: inline; margin-left: 50px; margin-right: 10px;">[다향오리]훈제오리 150g</p>
+				 <nav aria-label="..." style="display: inline-block; margin-right:50px;  margin-left: 35%;">
+				  <ul class="pagination">
+				    <li class="page-item disabled">
+				      <span class="page-link">-</span>
+				    </li>
+				    <li class="page-item active" aria-current="page">
+				      <span class="page-link">2</span>
+				    </li>
+				    <li class="page-item">
+				      <a class="page-link" href="#">+</a>
+				    </li>
+				  </ul>
+				</nav>
+				<p style="display: inline; margin-left: 50px; margin-right: 50px;">
+				2,980원
+				</p> 
+				</div>
+		  </div>
+		</div>			
+	  </div>
+	</div>
+	<h5 style="margin-top: 10%;">주문자 정보</h5>
+	<table class="col-10" style="border-top: 1px solid black;">
+	<tr>
+		<td style="font-size:13px; font-weight: bolder; height: 50px;">보내는분</td>
+		<td style="font-size:13px;">한동훈</td>
+	</tr>
+	<tr>
+		<td style="font-size:13px; font-weight: bolder; height: 50px;">휴대폰</td>
+		<td style="font-size:13px;">01011112222</td>
+	</tr>
+	<tr>
+		<td style="font-size:13px; font-weight: bolder; height: 50px;">이메일</td>
+		<td style="font-size:13px;">aaaa@naver.com</td>
+	</tr>
+	<tr>
+		<td style="font-size:13px; font-weight: bolder; height: 50px;"></td>
+		<td style="font-size:13px;">이메일을 통해 주문처리과정을 보내드립니다.<br>
+		정보 변경은 마이컬리 > 개인정보 수정 메뉴에서 가능합니다.
+		
+		</td>
+	</tr>
+		
+	</table>
+	<h5 style="margin-top: 10%;">배송 정보</h5>
+	<table class="col-10" style="border-top: 1px solid black;">
+	<tr>
+		<td style="font-size:13px; font-weight: bolder; height: 50px;">배송지</td>
+		<td style="font-size:13px;">경기 파주시 가온로 256(가람마을11단지 동문굿모닝힐아파트)</td>
+	</tr>
+	<tr>
+		<td style="font-size:13px; font-weight: bolder; height: 50px;">상세정보</td>
+		<td style="font-size:13px;">
+		<input type="text" class="form-control" placeholder="받으실 분 정보를 입력해주세요">
+		</td>
+	</tr>
+	<tr>
+		<td style="font-size:13px; font-weight: bolder;"></td>
+		<td style="font-size:13px;">
+		 <button class="btn btn" style="color: purple; border-color: purple; font-weight: bold;" type="button">입력</button>
+		</td>
+	</tr>
+	</table>
+<image src="../../images/orderPage.PNG" style="margin:20px;"></image>
+		<h5 style="margin-top: 10%;">쿠폰/적립금</h5>
+	<table class="col-10" style="border-top: 1px solid black;">
+		<tr>
+			<td style="font-size:13px; font-weight: bolder; height: 50px;">쿠폰적용</td>
+			<td style="font-size:13px;">
+				<select class="form-select" aria-label="Default select example">
+					<option selected>사용 가능 쿠폰 0개/전체 0개</option>
+					<option value="1">One</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td style="font-size:13px; font-weight: bolder; height: 50px;">적립금 적용</td>
+			<td style="font-size:13px;">사용 가능한 적립금이 없습니다.</td>
+		</tr>
+	</table>
+		<h5 style="margin-top: 10%;">결제금액</h5>
+	<table class="col-10" style="border-top: 1px solid black;">
+		<tr>
+			<td style="font-size:13px; font-weight: bolder; height: 50px;">주문금액</td>
+			<td style="font-size:13px;">2,980원</td>
+		</tr>
+		<tr>
+			<td style="font-size:13px; font-weight: bolder; height: 50px;">배송비</td>
+			<td style="font-size:13px;">3,000원</td>
+		</tr>
+		<tr>
+			<td style="font-size:13px; font-weight: bolder; height: 50px;">쿠폰할인금액</td>
+			<td style="font-size:13px;">0원</td>
+		</tr>
+		<tr>
+			<td style="font-size:13px; font-weight: bolder; height: 50px;">적립금사용</td>
+			<td style="font-size:13px;">0원</td>
+		</tr>
+		<tr>
+			<td style="font-size:13px; font-weight: bolder; height: 50px;">최종결제금액</td>
+			<td style="font-size:13px;">5,980원</td>
+		</tr>
+	</table>
+	<h5 style="margin-top: 10%;">결제수단</h5>
+	<table class="col-10" style="border-top: 1px solid black;">
+	<tr>
+		<td style="font-size:13px; font-weight: bolder; height: 50px;">결제수단 선택</td>
+		<td style="font-size:13px;"><button class="btn col-8" style="height: 50px; background-color: yellow; font-weight: bold;" type="button">카카오페이</button>
+		</td>
+	</tr>
+	<tr>
+		<td style="font-size:13px; font-weight: bolder; height: 50px;"></td>
+		<td style="font-size:13px;">
+		<div class="btn-group col-8" role="group" aria-label="Basic outlined example" style="height: 50px;">
+			<button type="button" class="btn btn-outline-primary">신용카드</button>
+			<button type="button" class="btn btn-outline-primary">간편결제</button>
+			<button type="button" class="btn btn-outline-primary">휴대폰</button>
+		</div>
+		</td>
+	</tr>
+	</table>
+	<h5 style="margin-top: 10%;">개인정보 수집/제공</h5>
+	<table class="col-10" style="border-top: 1px solid black;">
+		<tr>
+			<td>
+				<h5>
+					<div class="form-check" style="display: inline-block;">
+						<input class="form-check-input" type="checkbox" value=""id="agree" name=""> 
+					</div>결제 진행 필수 동의
+				</h5>
+			</td>		
+		</tr>
+		<tr>
+			<td style="font-size:13px; font-weight: bolder; height: 50px;">개인정보 수집·이용 및 처리 동의(필수) </td>
+		</tr>
+		<tr>
+			<td style="font-size:13px; font-weight: bolder; height: 50px;">전자지급 결제대행 서비스 이용약관 동의(필수)</td>
+		</tr>
+	</table>
+
+	<div style="text-align: center;">
+		<button class="btn col-4" style="color: white; background-color: purple; font-weight: bold;" type="button">주문하기</button>
+		<p style="font-size: 13px;">[배송준비중] 이전까지 주문 취소 가능합니다.<br>
+		미성년자가 결제 시 법정대리인이 그 거래를 취소할 수 있습니다.<br>
+		상품 미배송 시, 결제수단으로 환불됩니다.<br>
+		카카오페이,차이,토스,네이버페이,페이코 결제 시, 결제하신 수단으로만 환불됩니다.
+		</p>
+	</div>
+
+</div>
+	
+
 		
 		
 <lsection style="margin-top:10%;float: left; width: 50%;  margin-left:50px;">
