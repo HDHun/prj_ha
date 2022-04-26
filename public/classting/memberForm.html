@@ -1,0 +1,119 @@
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="uTF-8">
+<meta name="viewport" content="width=dievice-width, intitial-scale=1.0">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
+
+
+<title>memberForm</title>
+
+<style type="text/css">
+/*  	body{
+		background-color: #F9F9FA;
+	}
+ */	#sidebar{
+		background-color: white;
+	}
+ 	.btn-toggle{
+		font-size: 15px;
+		font-weight: bold;
+	}
+	#home{
+		margin-left: 40px;
+	}
+	#class{
+		margin-left: 20px;
+	}
+	.icon{
+		display: inline;
+		margin-right: 20px;
+	}
+	#classImg{
+		float: left;
+	}
+	#classInfo{
+		float: right;
+		font-size: 15px;
+		padding-top: 3px;
+	}
+	#menuList{
+		clear: both;
+	}
+	#btn-add{
+		border-radius: 50px;
+		font-size: 14px;
+		font-weight: bold;
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+	div {
+	margin: 10px;
+}
+
+	.container {
+	border: 1px black;
+}
+	
+</style>
+</head>
+<body>
+<div class="container-fluid">
+<!-- header s -->
+<header class="p-2 mb-3 border-bottom ">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+	    <img src="./header_logo.png"  width="150" >
+	      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+	        <li><a href="#" class="nav-link link-dark" id="home">회원관리</a></li>
+	        <li><a href="#" class="nav-link link-secondary" id="class">클래스관리</a></li>
+	      </ul>
+	    
+		 <div class="dropdown text-end">
+		      <div class="icon"><i class="fa-regular fa-bell fa-2x"></i></div>
+		      <div class="icon"><i class="fa-regular fa-comment fa-2x" ></i></div>
+		</div> 
+     
+	</div>
+</header>
+<!-- header e -->
+	<div class="container-fluid">
+		<h4>회원정보</h4>
+		<h5>프로필</h5>
+			<div class="row">
+				<div class="col-12">
+					<label for="ifmmName" class="form-label">이름</label>
+					<input type="text" class="form-control" id="ifmmName" name="ifmmName">
+				</div>
+				<div class="col-12">
+				<label for="classImg" class="form-label">프로필사진</label>
+					<div>
+						<img src="..."  width="75" height="75" id="classImg" name="classImg">
+					</div>
+				</div>
+				<div class="col-12">
+					<label for="school" class="form-label">학교</label>
+					<input type="text" class="form-control" id="school" name="school" placeholder="학교/기관 이름">
+				</div>
+
+	</div>
+	
+		
+					
+		
+				<footer style="border-top:2px solid green; margin-top : 5%;">
+					<p style="text-align: center;">대충 클래스팅</p>
+					<p style="text-align: center;">Copyright 2014.Classing Inc. all rights reserved</p>
+				</footer>
+			</div>
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+</html>
