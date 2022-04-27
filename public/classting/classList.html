@@ -11,7 +11,7 @@
 
 
 
-<title>adminList</title>
+<title>classList</title>
 
 <style type="text/css">
 /*  	body{
@@ -52,7 +52,7 @@
 		margin-top: 10px;
 		margin-bottom: 30px;
 	}
-
+	
 
 	.container {
 	border: 1px black;
@@ -61,9 +61,9 @@
 </style>
 </head>
 <body>
-<div class="container-fluid">
+<div class="container-fluid" >
 <!-- header s -->
-<header class="p-2 mb-3 border-bottom" style="background-color:#5FEE9E;">
+<header class="p-2 mb-3 border-bottom " style="background-color:#5FEE9E;">
     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 	    <img src="./header_logo.png"  width="150" >
 	      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -79,30 +79,26 @@
 	</div>
 </header>
 <!-- header e -->
+		
 		<div class="container">
-		<h3>회원관리</h3>
+			<h3>클래스관리</h3>
 				<div class="border p-3 ">
-				<select class="form-select" style="width:200px; display: inline;">
-					<option selected>회원구분</option>
-					<option value="1">선생님</option>
-					<option value="2">학생</option>
-				</select>
-				<select class="form-select" style="width: 200px; display: inline;">
-					<option value="">삭제여부</option>
-					<option value="1">Y</option>
-					<option value="2">N</option>
-				</select>
-			<input  class="form-control"  type="text" style="width: 200px; display: inline;" name="shDateStart" id="shDateStart" placeholder="시작날짜">
-			<input  class="form-control" type="text" style="width: 200px; display: inline;" name="shDateEnd" id="shDateEnd" placeholder="종료날짜">
-				
-				<br>
-				
 				
 				<select class="form-select" style="width: 200px; display: inline;">
 					<option value="">검색구분</option>
 					<option value="1">이름</option>
 					<option value="2">아이디</option>
 				</select>
+				<select class="form-select" style="width: 200px; display: inline;">
+					<option value="">삭제여부</option>
+					<option value="1">Y</option>
+					<option value="2">N</option>
+				</select>
+				<input  class="form-control"  type="text" style="width: 200px; margin-top:10px; display: inline;" name="shDateStart" id="shDateStart" placeholder="시작날짜">
+				<input  class="form-control" type="text" style="width: 200px; display: inline;" name="shDateEnd" id="shDateEnd" placeholder="종료날짜">
+				
+				<br>
+				<input type="text" class="form-control" placeholder="소속검색"style="width:200px; display:inline;">
 				<input type="text" class="form-control" placeholder="검색어"style="width:200px; display:inline;">
 				<button type="button" class="btn btn-outline-success btn-lg w-45" id="btn-add" style="margin-bottom:10px;">검색</button>
 				<button type="button" class="btn btn-outline-warning btn-lg w-45" id="btn-add" style="margin-bottom:10px;">새로고침</button>
@@ -119,10 +115,10 @@
 								<label class="form-check-label" for="flexCheckDefault" style="width: 100px;">전체선택</label></div></th>
 							<th scope="col" style="width: 5%;"><div style="width: 100px;">번호</div></th>
 							<th scope="col" style="width: 10%;"><div style="width: 100px;">이름</div></th>
-							<th scope="col" style="width: 15%;"><div style="width: 100px;">회원구분</div></th>
-							<th scope="col" style="width: 10%;"><div style="width: 100px;">소속</div></th>
-							<th scope="col" style="width: 15%;"><div style="width: 100px;">생년월일</div></th>	
-							<th scope="col" style="width: 15%;"><div style="width: 100px;">가입날짜</div></th>
+							<th scope="col" style="width: 15%;"><div style="width: 100px;">소속</div></th>
+							<th scope="col" style="width: 10%;"><div style="width: 100px;">클래스코드</div></th>
+							<th scope="col" style="width: 15%;"><div style="width: 100px;">생성날짜</div></th>	
+							<th scope="col" style="width: 15%;"><div style="width: 100px;">삭제여부</div></th>
 	      				</tr>
 	   			 </thead>
 	   			 <tbody>
@@ -131,11 +127,11 @@
 								<div class="form-check">
 								<input class="form-check-input" type="checkbox" value=""id="flexCheckDefault1"></div></td>
 							<td scope="col">1</td>
-							<td scope="col"><a href="./adminMemberView.html">한동훈</a></td>
-							<td scope="col">학생</td>
-							<td scope="col">##중학교</td>
+							<td scope="col"><a href="./classView.html">4조</a></td>
+							<td scope="col">이젠</td>
+							<td scope="col">KD83N3</td>
 							<td scope="col">2020.12.12</td>
-							<td scope="col">2022.01.02</td>
+							<td scope="col">O</td>
 								
 	    			  </tr>
 				      <tr>
@@ -143,11 +139,11 @@
 								<div class="form-check">
 								<input class="form-check-input" type="checkbox" value=""id="flexCheckDefault2"></div></td>
 							<td scope="col">2</td>
-							<td scope="col">최민수</td>
-							<td scope="col">선생</td>
+							<td scope="col">즐거운 영어</td>
 							<td scope="col">##초등학교</td>
+							<td scope="col">B923D3</td>
 							<td scope="col">2010.10.11</td>
-							<td scope="col">2021.10.23</td>
+							<td scope="col">X</td>
 								
 	    			  </tr>
 	           		 <tr>
@@ -155,33 +151,33 @@
 								<div class="form-check">
 								<input class="form-check-input" type="checkbox" value=""id="flexCheckDefault3"></div></td>
 								<td scope="col">3</td>
-								<td scope="col">박규원</td>
-								<td scope="col">학생</td>
+								<td scope="col">행복한 수학</td>
 								<td scope="col">##초등학교</td>
+								<td scope="col">DSVCUS</td>
 								<td scope="col">1999.03.03</td>
-								<td scope="col">2022.02.04</td>
+								<td scope="col">O</td>
 				   </tr>
 				   	<tr>
 								<td scope="col">
 									<div class="form-check">
 									<input class="form-check-input" type="checkbox" value=""id="flexCheckDefault4"></div></td>
 								<td scope="col">4</td>
-								<td scope="col">윤수빈</td>
-								<td scope="col">학생</td>
+								<td scope="col">우와 국어</td>
 								<td scope="col">##고등학교</td>
+								<td scope="col">UU28D3</td>
 								<td scope="col">2002.03.02</td>
-								<td scope="col">2020.12.24</td>
+								<td scope="col">X</td>
 					</tr>
 					<tr>
 								<td scope="col">
 									<div class="form-check">
 									<input class="form-check-input" type="checkbox" value=""id="flexCheckDefault5"></div></td>
 								<td scope="col">5</td>
-								<td scope="col">최선락</td>
-								<td scope="col">학생</td>
+								<td scope="col">알쏭달쏭 과학</td>
 								<td scope="col">##고등학교</td>
+								<td scope="col">FFFFFF</td>
 								<td scope="col">2003.12.11</td>
-								<td scope="col">2022.02.03</td>
+								<td scope="col">X</td>
 					</tr>
 			    </tbody>
 			  </table>
@@ -191,8 +187,7 @@
 		
 	<div style="text-align: right;">
 		<button type="button" class="btn btn-outline-danger btn-lg w-45"  id="btn-add" data-bs-toggle="modal" data-bs-target="#delete" id="btn-add" style="margin-bottom:10px;">삭제</button>
-		<button type="button" class="btn btn-outline-primary btn-lg w-45"  id="btn-add" style="margin-bottom:10px;" onclick="location.href='./memberForm.html'">회원추가</button>
-	</div>			
+				</div>	
 				<!-- modal -->	
 					<div class="modal" tabindex="-1" id="delete">
 		  <div class="modal-dialog">
@@ -213,8 +208,8 @@
 		  </div>
 				<!-- modal -->	
 					
-			
-			
+				
+	
 				<nav aria-label="Page navigation example" style="clear:both;">
 					<ul class="pagination" style="justify-content: center;">
 						<li class="page-item"><a class="page-link" href="#"aria-label="Previous">
@@ -226,7 +221,7 @@
 							<span aria-hidden="true">&raquo;</span></a></li>
 					</ul>
 				</nav>
-<footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+			<footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
 	<p class="col-md-5 mb-0 text-muted">
 		<a href="#" class="col-md-4 d-flex mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
 			<img src="./header_logo.png"  class="img-fluid" style="width: 100px; height: 40px;">

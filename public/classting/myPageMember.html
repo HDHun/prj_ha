@@ -72,9 +72,9 @@
 <!-- header e -->
 
 <!-- sidebar -->
-<div class="row">
+<div class="row">  <!-- style="background-color: #F6F9F7" -->
 		<!-- 3단길이의 첫번째 열 -->
-		<div class="col-md-2 d-none d-md-block h-100" id="sidebar">
+		<div class="col-md-2 d-none d-md-block h-110" id="sidebar">
 			<div class="col-lg-3" style="" id="classImg"> <img src="a3.jpg"  width="50" height="50"></div>
 			<div class="col-lg-9" id="classInfo"><span>class이름</span><p><span>구성원 *명</span></div>
 			<div ><button type="button" class="btn btn-outline-secondary w-100" id="btn-add">구성원 초대하기</button></div>
@@ -129,13 +129,13 @@
 			</div>
 		</div>
 	<!-- sidebar -->	
-	<div class="col-md-10 d-none d-md-block"  id="context">
-		<div style="margin-left: 30%; margin-right: 30%;">
-			<h4>프로필 설정</h4>
-			<div style="border:1px solid silver; border-radius: 10px;">
+	<div class="col-md-10 d-flex justify-content-center" id="context">
+		<div class="col-md-6">
+			<h4 style="text-align: center;">프로필 설정</h4>
+			<div style="border:1px solid silver; background-color: white;">
 			
 			<div class="col-lg-3" style="" id="classImg">
-				<img src="..."  width="75" height="75">
+				<img src="..."  width="70" height="70">
 			</div>
 			<div class="col-lg-9" id="classInfo">
 				<span style="font-size: 12px;">이 클래스에서만 사용할<br>
@@ -143,21 +143,22 @@
 				(개인정보 보호에 주의)</span>
 			</div>
 			<div>
-				<button type="button" class="btn btn-outline-secondary" id="btn-add">사진 삭제</button>
+				<button type="button" class="btn btn-outline-primary w-30" style="font-size:12px; font-weight:bold; border:none; margin-bottom:10px; margin-top:0px;">사진 변경</button>
+			
 			</div>
 			</div>
-			<div style="border:1px solid silver; border-radius: 10px; height:200px; margin-top: 30px;">
+			<div style="border:1px solid silver; height:200px; background-color: white; margin-top: 15px;">
 				<div class="col" style="margin-top:20px;">
 					<label for="ifmmName" class="form-label" style="font-weight: bold;">이름</label>
 					<input type="text" class="form-control" id="ifmmName" name="ifmmName">
 				</div>
 				<div style="text-align: right; margin-top:50px;">
-					<button type="submit" style="background-color:green; color:white;" class="btn" id="btn">변경사항 저장</button>
+					<button type="button" class="btn btn-outline-success btn-lg w-45" id="btn-add" style="margin-bottom:10px;">변경사항 저장</button>
 				</div>
 			</div>
 			
 			<div style="clear:both;">
-			<div style="border:1px solid silver; border-radius: 10px; height:200px; margin-top: 30px;">
+			<div style="border:1px solid silver; height:200px; background-color: white; margin-top: 15px;">
 				<p style="margin-bottom: 20px; margin-top: 10px; font-weight: bold;">클래스 알림 설정</p>
 				
 				<div class="form-check form-switch" style="display: inline; float: right;">
@@ -173,12 +174,28 @@
 				<span style="font-size: 12px;">내 게시글에 구성원이 반응하면 알림을 받을 수 있어요.</span>		
 			</div>
 			</div>
-		<div style="border:1px solid silver; border-radius: 10px; height:200px; margin-top: 30px;">
+			
+ <!-- 선생님이 zoom 연동시 생성됨 -->			
+			
+		<div style="border:1px solid silver; height:180px; background-color: white; margin-top: 15px;">
+			<div style="margin-top: 10px;">
+				<p style="font-weight: bold;">실시간 수업 Zoom 연동 해제</p>
+				<p style="font-size: 12px;">관리자로 활동하고 있는 모든 클래스에서 Zoom연동이 해제됩니다. 추후 실시간 수업을 이용하시려면 다시 Zoom을 연동해주세요.</p>
+				<div style=" float: right;">
+					<button type="button" class="btn btn-outline-danger btn-lg w-45" id="btn-add">Zoom 연동 해제</button>
+				</div>
+			</div>
+		</div>
+<!-- 선생님이 zoom 연동시 생성됨 -->			
+		
+		
+		
+		<div style="border:1px solid silver; height:150px; background-color: white; margin-top: 15px;">
 			<div style="margin-top: 10px;">
 				<p style="font-weight: bold;">클래스 탈퇴</p>
 				<p style="font-size: 12px;">이 클래스에서 탈퇴해도 기존에 작성한 콘텐츠와 활동 기록은 자동으로 삭제되지 않습니다.</p>
 				<div style=" float: right;">
-					<button type="button" style="background-color:red; color:white;" class="btn" data-bs-toggle="modal" data-bs-target="#resign">클래스 탈퇴</button>
+					<button type="button" class="btn btn-outline-danger btn-lg w-45" id="btn-add" style="margin-bottom:10px;">클래스 탈퇴</button>
 				</div>
 			</div>
 		</div>
