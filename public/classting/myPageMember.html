@@ -153,10 +153,28 @@
 					<input type="text" class="form-control" id="ifmmName" name="ifmmName">
 				</div>
 				<div style="text-align: right; margin-top:50px;">
-					<button type="button" class="btn btn-outline-success btn-lg w-45" id="btn-add" style="margin-bottom:10px;">변경사항 저장</button>
+					<button type="button" class="btn btn-outline-success btn-lg w-45" id="btn-add" style="margin-bottom:10px;" data-bs-toggle="modal" data-bs-target="#Change">변경사항 저장</button>
 				</div>
 			</div>
-			
+	<!-- modal -->
+		<div class="modal" tabindex="-1" id="Change">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">변경사항 저장</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+		    	수정하시겠습니까?
+			   </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+		        <button type="submit" class="btn btn-primary">확인</button>
+		      </div>
+		      </div>
+		    </div>
+		  </div>
+	<!-- modal end -->
 			<div style="clear:both;">
 			<div style="border:1px solid silver; height:200px; background-color: white; margin-top: 15px;">
 				<p style="margin-bottom: 20px; margin-top: 10px; font-weight: bold;">클래스 알림 설정</p>
@@ -182,10 +200,31 @@
 				<p style="font-weight: bold;">실시간 수업 Zoom 연동 해제</p>
 				<p style="font-size: 12px;">관리자로 활동하고 있는 모든 클래스에서 Zoom연동이 해제됩니다. 추후 실시간 수업을 이용하시려면 다시 Zoom을 연동해주세요.</p>
 				<div style=" float: right;">
-					<button type="button" class="btn btn-outline-danger btn-lg w-45" id="btn-add">Zoom 연동 해제</button>
+					<button type="button" class="btn btn-outline-danger btn-lg w-45" id="btn-add" data-bs-toggle="modal" data-bs-target="#zoomOut">Zoom 연동 해제</button>
 				</div>
 			</div>
 		</div>
+		
+		<!-- modal -->
+				<div class="modal" tabindex="-1" id="zoomOut">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title">줌연동 해제</h5>
+				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				      </div>
+				      <div class="modal-body">
+						모든 클래스에서 zoom 연동을 끊으시겠어요?
+					  </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+				        <button type="button" class="btn btn-primary">확인</button>
+				      </div>
+				      </div>
+				    </div>
+				  </div>
+				  
+<!-- modal end -->
 <!-- 선생님이 zoom 연동시 생성됨 -->			
 		
 		
@@ -195,13 +234,13 @@
 				<p style="font-weight: bold;">클래스 탈퇴</p>
 				<p style="font-size: 12px;">이 클래스에서 탈퇴해도 기존에 작성한 콘텐츠와 활동 기록은 자동으로 삭제되지 않습니다.</p>
 				<div style=" float: right;">
-					<button type="button" class="btn btn-outline-danger btn-lg w-45" id="btn-add" style="margin-bottom:10px;">클래스 탈퇴</button>
+					<button type="button" class="btn btn-outline-danger btn-lg w-45" id="btn-add" style="margin-bottom:10px;" data-bs-toggle="modal" data-bs-target="#goOut">클래스 탈퇴</button>
 				</div>
 			</div>
 		</div>
 				
 <!-- modal -->
-				<div class="modal" tabindex="-1" id="resign">
+				<div class="modal" tabindex="-1" id="goOut">
 				  <div class="modal-dialog">
 				    <div class="modal-content">
 				      <div class="modal-header">
