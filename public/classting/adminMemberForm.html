@@ -11,7 +11,7 @@
 
 
 
-<title>adminMemberInsert</title>
+<title>adminMemberForm</title>
 
 <style type="text/css">
 /*  	body{
@@ -84,21 +84,14 @@
 				<div class="col-md-6">
 		<h4 style="text-align: center;">회원추가</h4>
 		<h5>프로필</h5>
-				<div class="col-12">
 					<label for="ifmmName" class="form-label">이름</label>
 					<input type="text" class="form-control" id="ifmmName" name="ifmmName">
-				</div>
-				<div class="col-12">
 				<label for="classImg" class="form-label">프로필사진</label>
 					<div>
 						<img src="..."  width="75" height="75" id="classImg" name="classImg">
 					</div>
-				</div>
-				<div class="col-12">
 					<label for="school" class="form-label col-12">학교</label>
 					<input type="text" class="form-control" id="school" name="school" placeholder="학교/기관 이름">
-				</div>
-					<div class="col-12">
 				<label for="grade" class="form-label">담당학년</label>
 				<select class="form-select" id="grade" name="grade">
 					<option>학년 선택
@@ -109,14 +102,10 @@
 					<option>5학년
 					<option>6학년
 				</select>
-			</div>
-			<div class="col-12">
 		            <label class="col-form-label">프로필</label>
 		            <div class="col-12">
 		          	  <textarea rows="3" cols="90" id="ifmmDesc" name="ifmmDesc"></textarea>
 		            </div>
-		        </div>
-		        <div class="col-12">
 					<label for="gender" class="form-label">성별</label>
 					<select class="form-select" id="gender" name="gender">
 						<option>성별 선택
@@ -124,58 +113,40 @@
 						<option>여
 						<option>선택안함
 					</select>
-				</div>
-				<div class="col-12">
 					<label for="ifmmDob" class="form-label">생일</label>
 					<!-- datepicker 사용 -->
 					<input type="text" class="form-control" id="ifmmDob" name="ifmmDob"> 
 					<!-- datepicker 사용 -->
-				</div>
 			<hr>
 			<h5>계정</h5>
-			<div class="col-12">
 				<label for="ifmmId" class="form-label">아이디</label>
 				<input type="text" class="form-control" id="ifmmId" name="ifmmId">
-			</div>
-			<div class="col-12">
 				<label for="ifmmPassword" class="form-label">비밀번호</label>
 				<input type="text" class="form-control" id="ifmmPassword" name="ifmmPassword">
-			</div>
-			<div class="col-12">
 				<label for="email" class="form-label">이메일</label>
 				<input type="text" class="form-control"  id="email" name="email">
-			</div>
-			<div class="col-12">
 			<label for="number" class="form-label">휴대폰 번호</label>
 				<div class="input-group mb-3">
 					<input type="text" class="form-control"  id="number" name="number">
 				</div>
-			</div>
-			<div class="col-12">
 			<label for="role" class="form-label">역할</label>
 				<select class="form-select" id="role" name="role">
 					<option>선생님
 					<option>학생
 				</select>
-			</div>
 		<hr>
 		
 		<h5>알림 상세 설정</h5>
-			<div class="col-12">
 			<label for="alarm" class="form-label">클래스 초대/수락</label>
 				<select class="form-select" id="alarm" name="alarm">
 					<option>알림 받기
 					<option>알림 거부
 				</select>
-			</div>
-			<div class="col-12">
 			<label for="homeAlarm" class="form-label">홈소식</label>
 				<select class="form-select" id="homeAlarm" name="homeAlarm">
 					<option>모든 소식 알림
 					<option>알림 거부
 				</select>
-			</div>
-			<div class="col-12">
 			<label for="replyAlarm" class="form-label">답글</label>
 				<select class="form-select" id="replyAlarm" name="replyAlarm">
 					<option>모든 답글 알림
@@ -186,7 +157,6 @@
 				<button type="button" class="btn btn-outline-success btn-lg w-45" style="display: inline; float: right; " id="btn-add">가입</button>
 			</div>
 	
-			</div>
 			</div>
 			
 	</div>
